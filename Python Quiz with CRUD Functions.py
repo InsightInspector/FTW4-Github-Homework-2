@@ -60,7 +60,7 @@ def add_question():
     qafile = open('qa.pkl', 'wb')
     pickle.dump(updated_qa, qafile)
     qafile.close()
-    print("Congratulations! You have successfully added a question!")
+    print("\nCongratulations! You have successfully added a question!")
     
 add_question()
 
@@ -73,7 +73,7 @@ def delete_question():
     updated_qa = pickle.load(qafile)
     qafile.close()
     
-    print("Question Masterfile: \n")
+    print("\nQuestion Masterfile: \n")
     
     i = 1
     for q,a in updated_qa.items():
